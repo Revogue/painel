@@ -13,6 +13,6 @@
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', function () {
-        dd('This is the Admin module index page. Build something great!');
+        return view('admin::index');
     });
 });
