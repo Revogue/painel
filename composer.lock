@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e568f40a0bcfdf705124a0e8b2f9247c",
+    "content-hash": "4a74b0be8561655cecde548f18dacbb3",
     "packages": [
         {
             "name": "caffeinated/modules",
@@ -700,6 +700,66 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "konekt/menu",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/menu.git",
+                "reference": "a8559927d7738742edcd8a225182767432b868f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/menu/zipball/a8559927d7738742edcd8a225182767432b868f3",
+                "reference": "a8559927d7738742edcd8a225182767432b868f3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.4",
+                "illuminate/view": "~5.4",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "orchestra/testbench": "^3.4.2",
+                "phpunit/phpunit": "6.0 - 7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Konekt\\Menu\\MenuServiceProvider"
+                    ],
+                    "aliases": {
+                        "Menu": "Konekt\\Menu\\Facades\\Menu"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Menu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lavary",
+                    "email": "mrl.8081@gmail.com"
+                },
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Menus in Laravel 5",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2018-07-23T13:44:45+00:00"
         },
         {
             "name": "laravel/framework",
