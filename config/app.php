@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Konekt\Menu\MenuServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -175,7 +176,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        'Konekt\Menu\MenuServiceProvider',
+
 
 
     ],

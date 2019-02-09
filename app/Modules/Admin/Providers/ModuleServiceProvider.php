@@ -2,6 +2,7 @@
 
 namespace App\Modules\Admin\Providers;
 
+use App\Modules\Admin\Config\SidebarRightMenuRenderer;
 use Caffeinated\Modules\Support\ServiceProvider;
 
 class ModuleServiceProvider extends ServiceProvider
@@ -28,5 +29,8 @@ class ModuleServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+
+        $this->app->singleton('konekt.menu.renderer.menu.bulma', SidebarRightMenuRenderer::class);
+
     }
 }
