@@ -2,6 +2,7 @@
 
 namespace App\Modules\Register\Providers;
 
+use App\Modules\Register\Http\Middleware\MenuMiddleware;
 use Caffeinated\Modules\Support\ServiceProvider;
 use Konekt\Menu\Facades\Menu;
 
@@ -20,7 +21,6 @@ class ModuleServiceProvider extends ServiceProvider
         $this->loadConfigsFrom(module_path('register', 'Config', 'app'));
         $this->loadFactoriesFrom(module_path('register', 'Database/Factories', 'app'));
 
-        $this->createMenu();
     }
 
     /**
@@ -31,16 +31,10 @@ class ModuleServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+
+        $this->app->register(MenuServiceProvider::class);
+
     }
 
-    private function createMenu()
-    {
-        $sidebar = Menu::get('sidebar');
 
-        $sidebar->plugins->addSubItem('register', 'Registro', '/')->data('isMenu', true)->data("icon", 'fa fa-user');
-        $sidebar->plugins->register->addSubItem("overview", "Visão geral", '#');
-        $sidebar->plugins->register->addSubItem("new", "Adicionar novo usuário", '#');
-        $sidebar->plugins->register->addSubItem("list", "Listar Usuários", '#');
-        $sidebar->plugins->register->addSubItem("config", "Configuração", '#');
-    }
 }

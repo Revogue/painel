@@ -11,20 +11,22 @@
     <meta name="author" content="AbsoluteAdmin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    @stack('styles')
+
     <!-- Font CSS (Via CDN) -->
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
 
     <!-- FullCalendar Plugin CSS -->
-    <link rel="stylesheet" type="text/css" href="vendor/plugins/fullcalendar/fullcalendar.min.css">
+    <link href="{{ asset('vendor/plugins/fullcalendar/fullcalendar.min.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+    <link href="{{ asset('assets/skin/default_skin/css/theme.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Admin Forms CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.min.css">
+    <link href="{{ asset('assets/admin-tools/admin-forms/css/admin-forms.min.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link href="{{ asset('assets/img/favicon.ico') }}" rel="shortcut icon">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -232,29 +234,30 @@
 <!-- End: Main -->
 
 <!-- BEGIN: PAGE SCRIPTS -->
+@stack('scripts')
 
 <!-- jQuery -->
-<script src="vendor/jquery/jquery-1.11.1.min.js"></script>
-<script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script src="{{ asset('vendor/jquery/jquery-1.11.1.min.js') }}"></script>
+<script src="{{ asset('vendor/jquery/jquery_ui/jquery-ui.min.js') }}"></script>
 
 <!-- HighCharts Plugin -->
-<script src="vendor/plugins/highcharts/highcharts.js"></script>
+<script src="{{ asset('vendor/plugins/highcharts/highcharts.js') }}"></script>
 
 <!-- JvectorMap Plugin + US Map (more maps in plugin/assets folder) -->
-<script src="vendor/plugins/jvectormap/jquery.jvectormap.min.js"></script>
-<script src="vendor/plugins/jvectormap/assets/jquery-jvectormap-us-lcc-en.js"></script>
+<script src="{{ asset('vendor/plugins/jvectormap/jquery.jvectormap.min.js') }}"></script>
+<script src="{{ asset('vendor/plugins/jvectormap/assets/jquery-jvectormap-us-lcc-en.js') }}"></script>
 
 <!-- FullCalendar Plugin + moment Dependency -->
-<script src="vendor/plugins/fullcalendar/lib/moment.min.js"></script>
-<script src="vendor/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="{{ asset('vendor/plugins/fullcalendar/lib/moment.min.js') }}"></script>
+<script src="{{ asset('vendor/plugins/fullcalendar/fullcalendar.min.js') }}"></script>
 
 <!-- Theme Javascript -->
-<script src="assets/js/utility/utility.js"></script>
-<script src="assets/js/demo/demo.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="{{ asset('assets/js/utility/utility.js') }}"></script>
+<script src="{{ asset('assets/js/demo/demo.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 
 <!-- Widget Javascript -->
-<script src="assets/js/demo/widgets.js"></script>
+<script src="{{ asset('assets/js/demo/widgets.js') }}"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
 

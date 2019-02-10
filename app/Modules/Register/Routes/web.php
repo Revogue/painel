@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => 'register'], function () {
-        Route::get('/', function () {
-            return view('register::index');
-        });
+        Route::get('/', 'RegisterOverviewController@index');
+        Route::get('new', 'RegisterNewController@index');
+        Route::get('list', 'RegisterListController@index');
+        Route::get('config', 'RegisterConfigController@index');
     });
 });
+
