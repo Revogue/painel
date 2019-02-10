@@ -87,7 +87,7 @@
 
         <!-- Start: Sidebar Menu -->
 
-        {!! $bulmaMenu->render('bulma') !!}
+        {!! $bulmaMenu->render('absoluteAdmin') !!}
 
 
         <!-- End: Sidebar Menu -->
