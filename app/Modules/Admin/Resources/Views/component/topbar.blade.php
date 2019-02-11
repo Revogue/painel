@@ -1,3 +1,4 @@
+@section('topbar')
 <header id="topbar" class="alt">
     <div class="topbar-left">
         <ol class="breadcrumb">
@@ -34,3 +35,5 @@
         </div>
     </div>
 </header>
+@show
+

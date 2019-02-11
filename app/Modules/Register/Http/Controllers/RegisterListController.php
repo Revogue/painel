@@ -9,4 +9,7 @@ use App\Http\Controllers\Controller;
 class RegisterListController extends Controller
 {
     //
+    function index(){
+        return view('register::list.index');
+    }
 }

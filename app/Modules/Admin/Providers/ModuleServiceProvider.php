@@ -40,9 +40,10 @@ class ModuleServiceProvider extends ServiceProvider
     {
 
         $sidebar = Menu::create('sidebar', [
-            'active_element' => 'link',
-            'active_class'   => 'menu-open',
-            'share'          => 'bulmaMenu'
+            'auto_activate'     => true,
+            'active_element'    => 'link',
+            'active_class'      => 'menu-open',
+            'share'             => 'bulmaMenu'
         ]);
 
         $sidebar->addItem('menu', 'Menu')->data('isMenu', true);

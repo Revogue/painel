@@ -9,4 +9,7 @@ use App\Http\Controllers\Controller;
 class RegisterConfigController extends Controller
 {
     //
+    function index(){
+        return view('register::config.index');
+    }
 }

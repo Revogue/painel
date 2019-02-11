@@ -9,7 +9,7 @@ use Konekt\Menu\Facades\Menu;
 
 class RegisterOverviewController extends Controller
 {
-    function overview(){
+    function index(){
         return view('register::overview.index');
     }
 }

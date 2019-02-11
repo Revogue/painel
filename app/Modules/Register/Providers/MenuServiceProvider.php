@@ -31,7 +31,11 @@ class MenuServiceProvider extends ServiceProvider
     {
         $sidebar = Menu::get('sidebar');
 
-        $sidebar->plugins->addSubItem('register', 'Registro', '#')->data('isMenu', true)->data("icon", 'fa fa-user');
+        $sidebar->plugins->addSubItem('register', 'Registro', 'admin/register')
+            ->data('isMenu', true)
+            ->data("icon", 'fa fa-user')
+            ->activateOnUrls('admin/register/*');
+
         $sidebar->plugins->register->addSubItem("overview", "Visão geral", 'admin/register');
         $sidebar->plugins->register->addSubItem("new", "Adicionar novo usuário", 'admin/register/new');
         $sidebar->plugins->register->addSubItem("list", "Listar Usuários", 'admin/register/list');
