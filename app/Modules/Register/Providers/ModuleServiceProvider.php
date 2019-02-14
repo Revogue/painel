@@ -33,8 +33,6 @@ class ModuleServiceProvider extends ServiceProvider
         $this->app->register(RouteServiceProvider::class);
 
         $this->app->register(MenuServiceProvider::class);
-
     }
-
 
 }

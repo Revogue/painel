@@ -317,7 +317,7 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <a href="#">
-                                                <img class="media-object" alt="64x64" src="assets/img/avatars/3.jpg">
+                                                <img class="media-object" alt="64x64" src="/assets/img/avatars/3.jpg">
                                             </a>
                                         </div>
                                         <div class="media-body">
@@ -336,14 +336,14 @@
                                         </div>
                                         <div class="media-right">
                                             <a href="#">
-                                                <img class="media-object" alt="64x64" src="assets/img/avatars/1.jpg">
+                                                <img class="media-object" alt="64x64" src="/assets/img/avatars/1.jpg">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="media">
                                         <div class="media-left">
                                             <a href="#">
-                                                <img class="media-object" alt="64x64" src="assets/img/avatars/2.jpg">
+                                                <img class="media-object" alt="64x64" src="/assets/img/avatars/2.jpg">
                                             </a>
                                         </div>
                                         <div class="media-body">
@@ -362,14 +362,14 @@
                                         </div>
                                         <div class="media-right">
                                             <a href="#">
-                                                <img class="media-object" alt="64x64" src="assets/img/avatars/1.jpg">
+                                                <img class="media-object" alt="64x64" src="/assets/img/avatars/1.jpg">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="media">
                                         <div class="media-left">
                                             <a href="#">
-                                                <img class="media-object" alt="64x64" src="assets/img/avatars/2.jpg">
+                                                <img class="media-object" alt="64x64" src="/assets/img/avatars/2.jpg">
                                             </a>
                                         </div>
                                         <div class="media-body">
@@ -388,7 +388,7 @@
                                         </div>
                                         <div class="media-right">
                                             <a href="#">
-                                                <img class="media-object" alt="64x64" src="assets/img/avatars/1.jpg">
+                                                <img class="media-object" alt="64x64" src="/assets/img/avatars/1.jpg">
                                             </a>
                                         </div>
                                     </div>
@@ -396,7 +396,7 @@
                                 <div id="nav-tab3" class="tab-pane scroller-nm" role="tabpanel">
                                     <ul class="media-list" role="menu">
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/5.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/5.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading">Article
                                                     <small class="text-muted">- 08/16/22</small>
@@ -405,7 +405,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/2.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/2.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading mv5">Article
                                                     <small> - 08/16/22</small>
@@ -415,7 +415,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/3.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/3.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading">Article
                                                     <small class="text-muted">- 08/16/22</small>
@@ -424,7 +424,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/4.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/4.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading mv5">Article
                                                     <small class="text-muted">- 08/16/22</small>
@@ -433,7 +433,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/5.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/5.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading">Article
                                                     <small class="text-muted">- 08/16/22</small>
@@ -442,7 +442,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/2.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/2.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading mv5">Article
                                                     <small> - 08/16/22</small>
@@ -452,7 +452,7 @@
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <a class="media-left" href="#"> <img src="assets/img/avatars/3.jpg" class="mw40" alt="avatar"> </a>
+                                            <a class="media-left" href="#"> <img src="/assets/img/avatars/3.jpg" class="mw40" alt="avatar"> </a>
                                             <div class="media-body">
                                                 <h5 class="media-heading">Article
                                                     <small class="text-muted">- 08/16/22</small>
@@ -564,7 +564,7 @@
         </li>
         <li class="dropdown menu-merge">
             <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown">
-                <img src="assets/img/avatars/1.jpg" alt="avatar" class="mw30 br64">
+                <img src="/assets/img/avatars/1.jpg" alt="avatar" class="mw30 br64">
                 <span class="hidden-xs pl15"> Michael .R </span>
                 <span class="caret caret-tp hidden-xs"></span>
             </a>

@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => 'permission'], function () {
-        Route::get('/', function () {
-            dd('This is the Permission module index page. Build something great!');
-        });
+        Route::get('/', 'ManagerController@index');
+        Route::get('manager/permission', 'ManagerPermissionController@index');
+        Route::get('manager/user', 'ManagerUserController@index');
     });
 });

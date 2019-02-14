@@ -1616,7 +1616,7 @@
   Datepicker - jQuery UI
 ===================================================================*/
 .ui-datepicker {
-  z-index: 1025 !important;
+  z-index: 1025;
   display: none;
   position: relative;
   width: 18em;
