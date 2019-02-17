@@ -98,13 +98,17 @@ class SidebarRightMenuRenderer implements MenuRenderer
             $tray = sprintf($tray_format, $item->tray_color ? $item->tray_color : 'bg-primary', $item->tray);
         }
 
-        return sprintf('<a %s href="%s"%s>
+        if($item->hasChildren()){
+            $item->link->attr('class', 'accordion-toggle');
+            $item->checkActivation();
+        }
+
+        return sprintf('<a href="%s"%s>
             <span class="%s"></span>
             <span class="sidebar-title">%s</span>
             %s
             %s
         </a>',
-            $item->hasChildren() ? 'class="accordion-toggle"' : '',
             $item->link->url(),
             $item->link->attributesAsHtml(),
             $item->icon,

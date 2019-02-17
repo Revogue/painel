@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7f7c5567-2aee-4c13-b524-2ced1f31823e" name="Default Changelist" comment="Adicionado componentes HTML e modulo de gerenciamento de permissão.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,59 +34,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="244" selection-start-line="244" selection-end-line="244" />
+            <state relative-caret-position="263">
+              <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
               <folding>
-                <element signature="e#4214#5300#0#HTML" />
-                <element signature="e#5429#6605#0#HTML" />
+                <element signature="e#47#101#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="220">
+              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="71" selection-start-line="71" selection-end-line="73" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+              <folding>
+                <element signature="e#47#84#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+            <state relative-caret-position="144">
+              <caret line="103" column="9" selection-start-line="100" selection-start-column="8" selection-end-line="103" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Traits/HasAttributes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Utils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Link.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -116,7 +148,6 @@
       <find>File Uploaders</find>
       <find>active</find>
       <find>active(</find>
-      <find>activateOnUrls</find>
       <find>&quot;assets</find>
       <find>admin-forms</find>
       <find>datetimepicker1</find>
@@ -125,6 +156,10 @@
       <find>?</find>
       <find>datetimepicker</find>
       <find>src=&quot;vendor</find>
+      <find>activateOnUrls</find>
+      <find>menu</find>
+      <find>menu-open</find>
+      <find>attributesAsHtml</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;script src=&quot;{{ asset('$1') }}&quot;&gt;&lt;/script&gt;</replace>
@@ -134,11 +169,14 @@
     <dirStrings>
       <dir>C:\Users\Lucas\Desktop\panel\</dir>
       <dir>C:\Users\Lucas\Desktop\panel\app\Modules</dir>
+      <dir>C:\Users\Lucas\Desktop\panel</dir>
+      <dir>C:\Users\Lucas\IdeaProjects\painel</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Lucas Didur &lt;lucasdidur@hotmail.com&gt;" />
         <option value="lucasdidur@hotmail.com" />
       </list>
     </option>
@@ -147,8 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Modules/Register/Resources/Views/index.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
         <option value="$PROJECT_DIR$/app/Modules/Register/Http/Middleware/MenuMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterController.php" />
@@ -179,9 +215,7 @@
         <option value="$PROJECT_DIR$/public/assets/js/main.js" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/textarea.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php" />
@@ -193,11 +227,15 @@
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/vendor/konekt/menu/src/Item.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php" />
       </list>
     </option>
   </component>
@@ -348,6 +386,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
               <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -411,6 +457,14 @@
               <item name="Permission" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
@@ -574,6 +628,41 @@
               <item name="css" type="462c0819:PsiDirectoryNode" />
               <item name="theme.css" type="620a8d5e:NestingTreeNode" />
             </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="konekt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="konekt" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="konekt" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="konekt" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -596,19 +685,19 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components\form\input" />
-      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Http\Controllers" />
-      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Resources\Views\manager" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Http\Controllers" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components" />
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components\form\input" />
       <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager\permission" />
       <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager\user" />
       <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager\add" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Http\Controllers" />
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components\form\input" />
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Resources\Views\manager" />
+      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Http\Controllers" />
+      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -659,7 +748,7 @@
       <workItem from="1550335653219" duration="294000" />
       <workItem from="1550335991757" duration="536000" />
       <workItem from="1550336573090" duration="26967000" />
-      <workItem from="1550435719251" duration="3079000" />
+      <workItem from="1550435719251" duration="7506000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizando arquivos do projeto">
       <created>1547999900932</created>
@@ -731,11 +820,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550435897503</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adicionado componentes HTML e modulo de gerenciamento de permissão.">
+      <created>1550439221195</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1550439221195</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83095000" />
+    <option name="totallyTimeSpent" value="87522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -839,70 +935,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/wamp64/bin/php/php7.3.1/php.ini" />
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterConfigController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterOverviewController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#57#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Providers/MenuServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Providers/ModuleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="34" column="43" selection-start-line="34" selection-end-line="35" />
-          <folding>
-            <element signature="e#50#106#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/ModuleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/api.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/content.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1013,24 +1045,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="41" column="129" selection-start-line="41" selection-start-column="129" selection-end-line="41" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="537" column="16" selection-start-line="537" selection-start-column="16" selection-end-line="537" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1083,23 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="e#47#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/select.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1107,20 +1108,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#47#101#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="244" selection-start-line="244" selection-end-line="244" />
+        <state relative-caret-position="169">
+          <caret line="210" column="88" selection-start-line="210" selection-start-column="88" selection-end-line="210" selection-end-column="88" />
           <folding>
             <element signature="e#4214#5300#0#HTML" />
             <element signature="e#5429#6605#0#HTML" />
@@ -1186,8 +1177,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="339">
           <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/php.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/laravel-plugin.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/composerJson.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1496">
+          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="e#2324#2328#0" expanded="true" />
+            <element signature="e#2339#2345#0" expanded="true" />
+            <element signature="e#2349#2355#0" expanded="true" />
+            <element signature="e#2355#2359#0" expanded="true" />
+            <element signature="e#2359#2363#0" expanded="true" />
+            <element signature="e#2370#2374#0" expanded="true" />
+            <element signature="e#2481#2487#0" expanded="true" />
+            <element signature="e#2707#2713#0" expanded="true" />
+            <element signature="e#2816#2820#0" expanded="true" />
+            <element signature="e#2831#2837#0" expanded="true" />
+            <element signature="e#2854#2860#0" expanded="true" />
+            <element signature="e#2860#2864#0" expanded="true" />
+            <element signature="e#2864#2868#0" expanded="true" />
+            <element signature="e#2875#2879#0" expanded="true" />
+            <element signature="e#2905#2911#0" expanded="true" />
+            <element signature="e#2948#2954#0" expanded="true" />
+            <element signature="e#45317#45321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Traits/HasAttributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#47#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="e#47#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="103" column="9" selection-start-line="100" selection-start-column="8" selection-end-line="103" selection-end-column="9" />
         </state>
       </provider>
     </entry>

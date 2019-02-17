@@ -31,7 +31,7 @@ class MenuServiceProvider extends ServiceProvider
     {
         $sidebar = Menu::get('sidebar');
 
-        $sidebar->plugins->addSubItem('permission', 'Permissão', 'admin/permission')
+        $sidebar->plugins->addSubItem('permission', 'Permissão', '#')
             ->data('isMenu', true)
             ->data("icon", 'fa fa-user')
             ->activateOnUrls('admin/permission/*');
