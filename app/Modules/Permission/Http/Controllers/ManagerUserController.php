@@ -10,30 +10,74 @@ use Illuminate\Support\Facades\Route;
 class ManagerUserController extends Controller
 {
     //
-    function index(){
+    function index($serverName = null, $groupName = null){
 
 
-        $route = Route::getFacadeRoot()->current()->uri();;
-        $server['id'] = 1;
-        $groups[] = 'Jogador';
-        $groups[] = 'VIP';
-        $groups[] = 'Fundador';
+        $servers = [
+            [
+                'name' => 'Global',
+                'id' => ''
+            ],
+            [
+                'name' => 'Bungeecord',
+            ],
+            [
+                'name' => 'Hub 1',
+            ],
+            [
+                'name' => 'Hub 2',
+            ],
+            [
+                'name' => 'Criativo',
+            ],
+            [
+                'name' => 'Survival',
+            ],
+        ];
 
-        $users[0]['user'] = 'lucasdidur';
-        $users[0]['id'] = 1;
+        $groups= [
+            [
+                'name' => 'Jogador',
+                'id' => ''
+            ],
+            [
+                'name' => 'Moderador',
+                'id' => ''
+            ],
+            [
+                'name' => 'Administrador',
+                'id' => ''
+            ],
+            [
+                'name' => 'Ajudante',
+                'id' => ''
+            ],
+            [
+                'name' => 'Fundador',
+                'id' => ''
+            ],
+            [
+                'name' => 'VIP',
+                'id' => ''
+            ],
+        ];
 
-        $users[1]['user'] = 'cassio';
-        $users[1]['id'] = 2;
+        if(is_null($serverName)){
+            $serverName = reset($servers)['name'];
+        }
+        if(is_null($groupName)){
+            $groupName = reset($groups)['name'];
+        }
 
-        $users[2]['user'] = 'marcos3ds';
-        $users[2]['id'] = 3;
+        $users = [];
+        for($i = 0; $i < 10; $i++)
+        {
+            $users[$i]['id'] = $i+1;
+            $users[$i]['user'] = 'user_' . ($i + 1);
+            $users[$i]['world'] = "world";
+            $users[$i]['expire'] = "21/11/2019 09:14:11";
+        }
 
-        $users[3]['user'] = 'bull';
-        $users[3]['id'] = 4;
-
-        $users[4]['user'] = 'thiago';
-        $users[4]['id'] = 5;
-
-        return view("permission::manager.user.index", compact('server', 'route', 'groups', 'users'));
+        return view("permission::manager.user.index", compact('serverName', 'groupName', 'servers', 'groups', 'users'));
     }
 }

@@ -1,10 +1,32 @@
 @extends('admin::index')
 
+@section('topbar')
+    @parent
+    <!-- Start: Topbar -->
+    <header id="topbar" class="ph10">
+        <div class="topbar-left">
+            <ul class="nav nav-list nav-list-topbar pull-left">
+                @foreach($servers as $server)
+                    <li class="@if (strcasecmp($server['name'], $serverName) == 0) active @endif">
+                        <a href="{{route('permission.edit.permission', ['serverName' => $server['name'], 'groupName' => $groupName])}}">{{$server['name']}}</a>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="topbar-right hidden-xs hidden-sm">
+            <a href="{{route('permission.edit.permission', ['serverName' => $serverName, 'groupName' => $groupName])}}" class="btn btn-default btn-sm fw600 ml10" title="Gerenciar Permissões">
+                <span class="fa fa-check"></span>
+            </a>
+        </div>
+    </header>
+    <!-- End: Topbar -->
+@endsection
+
 @section('content')
 
     <!-- begin: .tray-left -->
     <aside class="tray tray-left tray290" data-tray-height="match">
-        <form class="admin-form">
+        {{--<form class="admin-form">
             <label class="field select">
                 <select id="filter-customers" name="system-control">
                     <option value="group">Grupos</option>
@@ -13,15 +35,15 @@
                 <i class="arrow double"></i>
             </label>
         </form>
-        <br>
+        <br>--}}
         <div class="text-center">
             <button id="animation-switcher" class="btn btn-system w250">Adicionar Usuário</button>
         </div>
         <div id="nav-spy">
             <ul class="nav tray-nav tray-nav-border" data-smoothscroll="-145" data-spy="affix" data-offset-top="105">
                 @foreach($groups as $group)
-                    <li >
-                        <a href="#{{$group}}">{{$group}}</a>
+                    <li class="@if (strcasecmp($group['name'], $groupName) == 0) active @endif">
+                        <a href="{{route('permission.edit.user', ['serverName' => $serverName, 'groupName' => $group['name']])}}">{{$group['name']}}</a>
                     </li>
                 @endforeach
             </ul>
@@ -39,6 +61,8 @@
                         <thead>
                         <tr>
                             <th>Usupario</th>
+                            <th>Mundo</th>
+                            <th>Expiração</th>
                             <th>Ação</th>
                         </tr>
                         </thead>
@@ -46,6 +70,8 @@
                         @foreach($users as $user)
                             <tr>
                                 <td>{{$user['user']}}</td>
+                                <td>{{$user['world']}}</td>
+                                <td>{{$user['expire']}}</td>
                                 <td class="text-right">
                                     <div class="btn-group">
                                         <button type="button" user-id="{{$user['id']}}" action="remove-user" class="btn btn-danger btn-xs">

@@ -2,69 +2,72 @@
 <div id="modal-add-permission" class="popup-basic popup-lg admin-form mfp-with-anim mfp-hide">
     <div class="panel">
         <div class="panel-heading">
-              <span class="panel-title">
-                <i class="fa fa-rocket"></i>Adicionar Permissão</span>
+              <span class="panel-title"><i class="fa fa-check"></i>Adicionar Permissão</span>
         </div>
-        <!-- end .panel-heading section -->
 
         <form method="post" action="/" id="comment">
             <div class="panel-body p25">
                 <div class="section row">
                     <div class="col-xs-7">
-                        <label for="permissions" class="field prepend-icon">
-                            <textarea class="gui-textarea" id="permissions" name="permissions" placeholder="Permissiões" cols="7"></textarea>
-                            <label for="comment" class="field-icon">
-                                <i class="fa fa-comments"></i>
-                            </label>
-                            <span class="input-footer">Digite as permissões a serem adicionadas. Uma por linha</span>
-                        </label>
+                        <div class="row">
+                            @textarea([
+                                'layout' => 'admin-form',
+                                'size' => 12,
+                                'id' => 'permissions',
+                                'name' => 'permissions',
+                                'icon' => 'fa fa-comments',
+                                'placeholder' => 'Permissiões',
+                                'footer' => 'Digite as permissões a serem adicionadas. Uma por linha',
+                            ])
+                            @endtextarea
+
+                        </div>
                         <br>
                         <br>
-                        <label for="datetime-expires" class="field prepend-icon">
-                            <input type="text" id="datetime-expires" name="datetime-expires" class="gui-input" placeholder="Expiração da permissão">
-                            <label class="field-icon">
-                                <i class="fa fa-calendar-o"></i>
-                            </label>
-                        </label>
+                        <div class="row">
+                            @input_date([
+                                'layout' => 'admin-form',
+                                'size' => 12,
+                                'id' => 'datetime-expires',
+                                'name' => 'datetime-expires',
+                                'icon' => 'fa fa-calendar-o',
+                                'placeholder' => 'Expiração da permissão',
+                            ])
+                            @endinput_date
+                        </div>
                     </div>
                     <div class="col-xs-5">
-                        {{-- <p class="text-muted">
+                         <p class="text-muted">
                             <span class="fa fa-exclamation-circle text-warning fs15 pr5"></span> Escolha o grupo a adicionar
                         </p>
                         <hr class="alt short mv15">
---}}
-                        <label class="field option">
-                            <input type="checkbox" name="info">
-                            <span class="checkbox mr10"></span> Ajudante
-                        </label>
-                        <br>
-                        <label class="field option mt15">
-                            <input type="checkbox" name="info">
-                            <span class="checkbox mr10"></span> Moderador
-                        </label>
-                        <br>
-                        <label class="field option mt15">
-                            <input type="checkbox" name="info">
-                            <span class="checkbox mr10"></span> Fundador
-                        </label>
+
+                        @foreach($groups as $group)
+                            @checkbox([
+                                'layout' => 'admin-form',
+                                'size' => 12,
+                                'id' => 'groups',
+                                'name' => 'groups',
+                                'value' => $group['id'],
+                                'text' => $group['name'],
+                                'checked' => strcasecmp($group['name'], $groupName) == 0 ? true : false
+                            ])
+                            @endcheckbox
+                            <br>
+                        @endforeach
 
                     </div>
-                    <!-- end section -->
                 </div>
             </div>
-            <!-- end .form-body section -->
 
             <div class="panel-footer">
                 <div class="text-right">
-                    <button type="submit" class="button btn-primary">Adicionar Servidor</button>
+                    <button type="submit" class="button btn-primary">Adicionar</button>
                 </div>
             </div>
-            <!-- end .form-footer section -->
         </form>
     </div>
-    <!-- end: .panel -->
 </div>
-<!-- end: .admin-form -->
 
 @push('styles')
     <link rel="stylesheet" type="text/css" href="/vendor/plugins/datepicker/css/bootstrap-datetimepicker.css">
@@ -82,19 +85,11 @@
         jQuery(document).ready(function() {
             //$('#datetimepicker1').datetimepicker();
 
-            $('#datetime-expires').datetimepicker({
+            $('input[data-type=date]').datetimepicker({
                 dateFormat: 'dd/mm/yy',
                 timeFormat: "HH:mm:ss",
                 prevText: '<i class="fa fa-chevron-left"></i>',
                 nextText: '<i class="fa fa-chevron-right"></i>',
-                beforeShow: function(input, inst) {
-                    var newclass = 'admin-form';
-                    var themeClass = $(this).parents('.admin-form').attr('class');
-                    var smartpikr = inst.dpDiv.parent();
-                    if (!smartpikr.hasClass(themeClass)) {
-                        inst.dpDiv.wrap('<div class="' + themeClass + '"></div>');
-                    }
-                }
             });
         });
     </script>

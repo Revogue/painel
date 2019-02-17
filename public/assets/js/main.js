@@ -86,26 +86,28 @@ var Core = function(options) {
       };
 
       // Sidebar Left Collapse Entire Menu event
-      $('.sidebar-toggle-mini').on('click', function(e) {
-         e.preventDefault();
+      $('.sidebar-toggle-mini').on('click', sidebarLeftCollapse);
 
-         // If sidebar is set to Horizontal we return
-         if ($('body.sb-top').length) { return; }   
+      var sidebarLeftCollapse = function (e){
+          e.preventDefault();
 
-         // Close Menu
-         Body.addClass('sb-l-c');
-         triggerResize();
+          // If sidebar is set to Horizontal we return
+          if ($('body.sb-top').length) { return; }
 
-         // After animation has occured we toggle the menu.
-         // Upon the menu reopening the classes will be toggled
-         // again, effectively restoring the menus state prior
-         // to being hidden 
-         if (!Body.hasClass('mobile-view')) {
-            setTimeout(function() {
-               Body.toggleClass('sb-l-m sb-l-o');
-            }, 250);
-         }
-      });
+          // Close Menu
+          Body.addClass('sb-l-c');
+          triggerResize();
+
+          // After animation has occured we toggle the menu.
+          // Upon the menu reopening the classes will be toggled
+          // again, effectively restoring the menus state prior
+          // to being hidden
+          if (!Body.hasClass('mobile-view')) {
+              setTimeout(function() {
+                  Body.toggleClass('sb-l-m sb-l-o');
+              }, 250);
+          }
+      };
 
       // Check window size on load
       // Adds or removes "mobile-view" class based on window size

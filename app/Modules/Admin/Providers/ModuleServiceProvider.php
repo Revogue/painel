@@ -30,6 +30,7 @@ class ModuleServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+        $this->app->register(ComponentServiceProvider::class);
 
         $this->app->singleton('konekt.menu.renderer.menu.absoluteAdmin', SidebarRightMenuRenderer::class);
 

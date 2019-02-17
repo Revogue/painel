@@ -6,22 +6,17 @@
     <header id="topbar" class="ph10">
         <div class="topbar-left">
             <ul class="nav nav-list nav-list-topbar pull-left">
-                <li>
-                    <a href="ecommerce_dashboard.html">Bungeecord</a>
-                </li>
-                <li>
-                    <a href="ecommerce_products.html">Hub 1</a>
-                </li>
-                <li>
-                    <a href="ecommerce_orders.html">Hub 2</a>
-                </li>
-                <li>
-                    <a href="ecommerce_customers.html">Cruativo</a>
-                </li>
-                <li class="active">
-                    <a href="ecommerce_marketing.html">Survival</a>
-                </li>
+                @foreach($servers as $server)
+                    <li class="@if (strcasecmp($server['name'], $serverName) == 0) active @endif">
+                        <a href="{{route('permission.edit.permission', ['serverName' => $server['name'], 'groupName' => $groupName])}}">{{$server['name']}}</a>
+                    </li>
+                @endforeach
             </ul>
+        </div>
+        <div class="topbar-right hidden-xs hidden-sm">
+            <a href="{{route('permission.edit.user', ['serverName' => $serverName, 'groupName' => $groupName])}}" class="btn btn-default btn-sm fw600 ml10" title="Gerenciar Usuários">
+                <span class="fa fa-user"></span>
+            </a>
         </div>
     </header>
     <!-- End: Topbar -->
@@ -31,7 +26,7 @@
 
     <!-- begin: .tray-left -->
     <aside class="tray tray-left tray290" data-tray-height="match">
-        <form class="admin-form">
+        {{--<form class="admin-form">
             <label class="field select">
                 <select id="filter-customers" name="system-control">
                     <option value="group" selected="selected">Grupos</option>
@@ -40,15 +35,15 @@
                 <i class="arrow double"></i>
             </label>
         </form>
-        <br>
+        <br>--}}
         <div class="text-center">
             <button id="animation-switcher" class="btn btn-system w250">Adicionar Permissão</button>
         </div>
         <div id="nav-spy">
             <ul class="nav tray-nav tray-nav-border" data-smoothscroll="-145" data-spy="affix" data-offset-top="105">
                 @foreach($groups as $group)
-                    <li >
-                        <a href="#{{$group}}">{{$group}}</a>
+                    <li class="@if (strcasecmp($group['name'], $groupName) == 0) active @endif">
+                        <a href="{{route('permission.edit.permission', ['serverName' => $serverName, 'groupName' => $group['name']])}}">{{$group['name']}}</a>
                     </li>
                 @endforeach
             </ul>
@@ -66,6 +61,8 @@
                         <thead>
                         <tr>
                             <th>Permissão</th>
+                            <th>Mundo</th>
+                            <th>Expiração</th>
                             <th>Ação</th>
                         </tr>
                         </thead>
@@ -73,6 +70,8 @@
                         @foreach($permissions as $permission)
                             <tr>
                                 <td>{{$permission['node']}}</td>
+                                <td>{{$permission['world']}}</td>
+                                <td>{{$permission['expire']}}</td>
                                 <td class="text-right">
                                     <div class="btn-group">
                                         <button type="button" permission-id="{{$permission['id']}}" action="remove-permission" class="btn btn-danger btn-xs">
@@ -121,7 +120,6 @@
 
     <!-- Datatables Bootstrap Modifications  -->
     <script src="{{ asset('vendor/plugins/datatables/media/js/dataTables.bootstrap.js') }}"></script>
-
 
     <!-- Page Plugins -->
     <script src="{{ asset('vendor/plugins/magnific/jquery.magnific-popup.js') }}"></script>
