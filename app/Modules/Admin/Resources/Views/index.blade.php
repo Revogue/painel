@@ -19,6 +19,9 @@
     <!-- FullCalendar Plugin CSS -->
     <link href="{{ asset('vendor/plugins/fullcalendar/fullcalendar.min.css') }}" rel="stylesheet" type="text/css">
 
+    <!-- Datetimepicker Plugin CSS -->
+    <link href="{{ asset('vendor/plugins/datepicker/css/bootstrap-datetimepicker.css') }}" rel="stylesheet" type="text/css" >
+
     <!-- Theme CSS -->
     <link href="{{ asset('assets/skin/default_skin/css/theme.css') }}" rel="stylesheet" type="text/css">
 
@@ -41,8 +44,6 @@
     <!-- Start: Header -->
     @include('admin::component.header')
     <!-- End: Header -->
-
-
 
     <!-- Start: Sidebar -->
     @include('admin::component.sidebar_left')
@@ -82,8 +83,15 @@
 <script src="{{ asset('vendor/jquery/jquery-1.11.1.min.js') }}"></script>
 <script src="{{ asset('vendor/jquery/jquery_ui/jquery-ui.min.js') }}"></script>
 
+<!-- Time/Date Plugin Dependencies -->
+<script src="{{ asset('vendor/plugins/globalize/globalize.min.js') }}"></script>
+<script src="{{ asset('vendor/plugins/moment/moment.min.js') }}"></script>
+
 <!-- HighCharts Plugin -->
 <script src="{{ asset('vendor/plugins/highcharts/highcharts.js') }}"></script>
+
+<!-- DateTime Plugin -->
+<script src="{{ asset('vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
 
 <!-- JvectorMap Plugin + US Map (more maps in plugin/assets folder) -->
 <script src="{{ asset('vendor/plugins/jvectormap/jquery.jvectormap.min.js') }}"></script>
@@ -92,6 +100,9 @@
 <!-- FullCalendar Plugin + moment Dependency -->
 <script src="{{ asset('vendor/plugins/fullcalendar/lib/moment.min.js') }}"></script>
 <script src="{{ asset('vendor/plugins/fullcalendar/fullcalendar.min.js') }}"></script>
+
+<!-- Page Plugins -->
+<script src="{{ asset('vendor/plugins/magnific/jquery.magnific-popup.js') }}"></script>
 
 <!-- Theme Javascript -->
 <script src="{{ asset('assets/js/utility/utility.js') }}"></script>
@@ -116,6 +127,18 @@
 
         // Init Theme Core
         Core.init();
+
+
+        // Selects
+        $('select').multiselect();
+
+        // Input de data
+        $('input[data-type=date]').datetimepicker({
+            dateFormat: 'dd/mm/yy',
+            timeFormat: "HH:mm:ss",
+            prevText: '<i class="fa fa-chevron-left"></i>',
+            nextText: '<i class="fa fa-chevron-right"></i>'
+        });
 
 
         // Init Widget Demo JS
@@ -407,6 +430,52 @@
         }
 
     });
+
+    function setupTable(element) {
+        $(element).dataTable({
+            "aoColumnDefs": [{
+                'bSortable': true,
+                'aTargets': [-1]
+            }],
+            "oLanguage": {
+                "oPaginate": {
+                    "sPrevious": "Proxima",
+                    "sNext": "Anterior"
+                }
+            },
+            "iDisplayLength": 5,
+            "aLengthMenu": [
+                [5, 10, 25, 50, -1],
+                [5, 10, 25, 50, "All"]
+            ],
+            "sDom": '<"dt-panelmenu clearfix"lfr>t<"dt-panelfooter clearfix"ip>',
+            "oTableTools": {
+                "sSwfPath": "{{ asset('vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf') }}"
+            },
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.10/i18n/Portuguese-Brasil.json"
+            }
+        });
+    }
+
+    function setupModal(inicialize, element, animation) {
+        $(inicialize).on('click', function () {
+            // Inline Admin-Form example
+            $.magnificPopup.open({
+                removalDelay: 500, //delay removal by X to allow out-animation,
+                items: {
+                    src: element
+                },
+                // overflowY: 'hidden', //
+                callbacks: {
+                    beforeOpen: function (e) {
+                        this.st.mainClass = animation;
+                    }
+                },
+                midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+            });
+        });
+    }
 </script>
 <!-- END: PAGE SCRIPTS -->
 

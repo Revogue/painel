@@ -70,27 +70,9 @@
 </div>
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="/vendor/plugins/datepicker/css/bootstrap-datetimepicker.css">
-
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-tools/admin-forms/css/admin-forms.css') }}">
 @endpush
 
 @push('scripts')
-    <!-- DateTime Plugin -->
-    <script src="{{ asset('vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
-    <!-- AdminForms JS -->
-    <script src="{{ asset('assets/admin-tools/admin-forms/js/jquery-ui-datepicker.min.js') }}"></script>
 
-    <script>
-        jQuery(document).ready(function() {
-            //$('#datetimepicker1').datetimepicker();
-
-            $('input[data-type=date]').datetimepicker({
-                dateFormat: 'dd/mm/yy',
-                timeFormat: "HH:mm:ss",
-                prevText: '<i class="fa fa-chevron-left"></i>',
-                nextText: '<i class="fa fa-chevron-right"></i>',
-            });
-        });
-    </script>
 @endpush

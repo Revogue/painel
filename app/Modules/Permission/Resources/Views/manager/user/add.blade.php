@@ -69,3 +69,9 @@
         </form>
     </div>
 </div>
+
+@push('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-tools/admin-forms/css/admin-forms.css') }}">
+@endpush
+
+

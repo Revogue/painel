@@ -60,7 +60,8 @@
                     <table class="table admin-form mn" id="datatable2" cellspacing="0" width="100%">
                         <thead>
                         <tr>
-                            <th>Usupario</th>
+                            <th>Usuário</th>
+                            <th>UUID</th>
                             <th>Mundo</th>
                             <th>Expiração</th>
                             <th>Ação</th>
@@ -70,6 +71,7 @@
                         @foreach($users as $user)
                             <tr>
                                 <td>{{$user['user']}}</td>
+                                <td>{{$user['uuid'] ?? ''}}</td>
                                 <td>{{$user['world']}}</td>
                                 <td>{{$user['expire']}}</td>
                                 <td class="text-right">
@@ -122,59 +124,13 @@
     <!-- Datatables Bootstrap Modifications  -->
     <script src="{{ asset('vendor/plugins/datatables/media/js/dataTables.bootstrap.js') }}"></script>
 
-    <!-- Page Plugins -->
-    <script src="{{ asset('vendor/plugins/magnific/jquery.magnific-popup.js') }}"></script>
-
     <script type="text/javascript">
         jQuery(document).ready(function() {
 
             setupModal('#animation-switcher', '#modal-add-user', 'mfp-with-fade');
 
-            $('#datatable2').dataTable({
-                "aoColumnDefs": [{
-                    'bSortable': true,
-                    'aTargets': [-1]
-                }],
-                "oLanguage": {
-                    "oPaginate": {
-                        "sPrevious": "Proxima",
-                        "sNext": "Anterior"
-                    }
-                },
-                "iDisplayLength": 5,
-                "aLengthMenu": [
-                    [5, 10, 25, 50, -1],
-                    [5, 10, 25, 50, "All"]
-                ],
-                "sDom": '<"dt-panelmenu clearfix"lfr>t<"dt-panelfooter clearfix"ip>',
-                "oTableTools": {
-                    "sSwfPath": "{{ asset('vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf') }}"
-                },
-                "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.10/i18n/Portuguese-Brasil.json"
-                }
-            });
-
+            setupTable('#datatable2');
 
         });
-
-        function setupModal(inicialize, element, animation) {
-            $(inicialize).on('click', function () {
-                // Inline Admin-Form example
-                $.magnificPopup.open({
-                    removalDelay: 500, //delay removal by X to allow out-animation,
-                    items: {
-                        src: element
-                    },
-                    // overflowY: 'hidden', //
-                    callbacks: {
-                        beforeOpen: function (e) {
-                            this.st.mainClass = animation;
-                        }
-                    },
-                    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-                });
-            });
-        }
     </script>
 @endpush
