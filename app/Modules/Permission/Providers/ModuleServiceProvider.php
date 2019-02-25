@@ -10,12 +10,13 @@ class ModuleServiceProvider extends ServiceProvider
      * Bootstrap the module services.
      *
      * @return void
+     * @throws \Caffeinated\Modules\Exceptions\ModuleNotFoundException
      */
     public function boot()
     {
         $this->loadTranslationsFrom(module_path('permission', 'Resources/Lang', 'app'), 'permission');
         $this->loadViewsFrom(module_path('permission', 'Resources/Views', 'app'), 'permission');
-        $this->loadMigrationsFrom(module_path('permission', 'Database/Migrations', 'app'), 'permission');
+        $this->loadMigrationsFrom(module_path('permission', 'Database/Migrations', 'app'));
         $this->loadConfigsFrom(module_path('permission', 'Config', 'app'));
         $this->loadFactoriesFrom(module_path('permission', 'Database/Factories', 'app'));
     }

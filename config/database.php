@@ -82,6 +82,19 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'permission' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_EXT_HOST', '127.0.0.1'),
+            'port'      => env('DB_EXT_PORT', '3306'),
+            'database'  => env('DB_EXT_DATABASE', 'revog_minecraft'),
+            'username'  => env('DB_EXT_USERNAME', 'root'),
+            'password'  => env('DB_EXT_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
     ],
 
     /*

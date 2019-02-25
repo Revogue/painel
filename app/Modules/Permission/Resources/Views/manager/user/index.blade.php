@@ -1,5 +1,7 @@
 @extends('admin::index')
 
+@section('title', 'Gerenciar Usuários')
+
 @section('topbar')
     @parent
     <!-- Start: Topbar -->
@@ -7,8 +9,8 @@
         <div class="topbar-left">
             <ul class="nav nav-list nav-list-topbar pull-left">
                 @foreach($servers as $server)
-                    <li class="@if (strcasecmp($server['name'], $serverName) == 0) active @endif">
-                        <a href="{{route('permission.edit.permission', ['serverName' => $server['name'], 'groupName' => $groupName])}}">{{$server['name']}}</a>
+                    <li class="@if (strcasecmp($server['id'], $serverName) == 0) active @endif">
+                        <a href="{{route('permission.edit.user', ['serverName' => $server['id'], 'groupName' => $groupName])}}">{{$server['name']}}</a>
                     </li>
                 @endforeach
             </ul>
@@ -26,16 +28,7 @@
 
     <!-- begin: .tray-left -->
     <aside class="tray tray-left tray290" data-tray-height="match">
-        {{--<form class="admin-form">
-            <label class="field select">
-                <select id="filter-customers" name="system-control">
-                    <option value="group">Grupos</option>
-                    <option value="users" selected="selected">Usuarios</option>
-                </select>
-                <i class="arrow double"></i>
-            </label>
-        </form>
-        <br>--}}
+
         <div class="text-center">
             <button id="animation-switcher" class="btn btn-system w250">Adicionar Usuário</button>
         </div>
@@ -62,7 +55,6 @@
                         <tr>
                             <th>Usuário</th>
                             <th>UUID</th>
-                            <th>Mundo</th>
                             <th>Expiração</th>
                             <th>Ação</th>
                         </tr>
@@ -72,8 +64,7 @@
                             <tr>
                                 <td>{{$user['user']}}</td>
                                 <td>{{$user['uuid'] ?? ''}}</td>
-                                <td>{{$user['world']}}</td>
-                                <td>{{$user['expire']}}</td>
+                                <td>{{$user['expire'] ?? 'Nunca'}}</td>
                                 <td class="text-right">
                                     <div class="btn-group">
                                         <button type="button" user-id="{{$user['id']}}" action="remove-user" class="btn btn-danger btn-xs">

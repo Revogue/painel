@@ -6,13 +6,18 @@
         </div>
         <!-- end .panel-heading section -->
 
-        <form method="post" action="/" id="comment">
+        <form class="ajax dialog" method="post"
+              action="http://painel.localhost/api/permission/group"
+              data-notification-success-tile="Adicionado"
+              data-notification-success="Usuario adicionado"
+              data-notification-error-tile="Erro ao adicionar usuário"
+        >
             <div class="panel-body p25">
                 <div class="section row">
                     @input_text([
                         'layout' => 'admin-form',
                         'size' => 7,
-                        'name' => 'group-name',
+                        'name' => 'name',
                         'placeholder' => 'Digite o nome do grupo',
                         'icon' => 'fa fa-group'
                     ])
@@ -21,7 +26,7 @@
                     @input_number([
                         'layout' => 'admin-form',
                         'size' => 5,
-                        'name' => 'group-rank',
+                        'name' => 'rank',
                         'placeholder' => 'Digite rank do Grupo',
                         'icon' => 'fa fa-sort'
                     ])

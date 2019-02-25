@@ -5,7 +5,13 @@
               <span class="panel-title"><i class="fa fa-check"></i>Adicionar Permissão</span>
         </div>
 
-        <form method="post" action="/" id="comment">
+        <form class="ajax dialog" method="post"
+              action="http://painel.localhost/api/permission/group/permission"
+              data-notification-success-tile="Adicionado"
+              data-notification-success="Permissção adicionada"
+              data-notification-error-tile="Erro ao adicionar permissão"
+        >
+            <input type="hidden" name="serverName" value="{{$serverName}}">
             <div class="panel-body p25">
                 <div class="section row">
                     <div class="col-xs-7">
@@ -13,14 +19,27 @@
                             @textarea([
                                 'layout' => 'admin-form',
                                 'size' => 12,
-                                'id' => 'permissions',
-                                'name' => 'permissions',
+                                'id' => 'nodes',
+                                'name' => 'nodes',
                                 'icon' => 'fa fa-comments',
                                 'placeholder' => 'Permissiões',
+                                'required' => 'true',
                                 'footer' => 'Digite as permissões a serem adicionadas. Uma por linha',
                             ])
                             @endtextarea
-
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            @input_text([
+                            'layout' => 'admin-form',
+                            'size' => 12,
+                            'id' => 'world',
+                            'name' => 'world',
+                            'icon' => 'fa fa-globe',
+                            'placeholder' => 'Mundo',
+                            ])
+                            @endinput_text
                         </div>
                         <br>
                         <br>
@@ -28,8 +47,8 @@
                             @input_date([
                                 'layout' => 'admin-form',
                                 'size' => 12,
-                                'id' => 'datetime-expires',
-                                'name' => 'datetime-expires',
+                                'id' => 'expires',
+                                'name' => 'expires',
                                 'icon' => 'fa fa-calendar-o',
                                 'placeholder' => 'Expiração da permissão',
                             ])
@@ -37,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-xs-5">
-                         <p class="text-muted">
+                        <p class="text-muted">
                             <span class="fa fa-exclamation-circle text-warning fs15 pr5"></span> Escolha o grupo a adicionar
                         </p>
                         <hr class="alt short mv15">
@@ -47,7 +66,7 @@
                                 'layout' => 'admin-form',
                                 'size' => 12,
                                 'id' => 'groups',
-                                'name' => 'groups',
+                                'name' => 'groups[]',
                                 'value' => $group['id'],
                                 'text' => $group['name'],
                                 'checked' => strcasecmp($group['name'], $groupName) == 0 ? true : false
@@ -74,5 +93,7 @@
 @endpush
 
 @push('scripts')
+
+
 
 @endpush

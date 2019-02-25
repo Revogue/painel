@@ -1,7 +1,7 @@
 <div class="col-md-{{$size ?? '12'}}">
     <div class="form-group">
         <label for="{{$id ?? $name}}" class="control-label">{{$text ?? ''}}</label>
-        <select id="{{$id ?? $name}}" name="{{$name ?? $id}}" {{isset($selected_group) ? "multiple" : ""}}>
+        <select id="{{$id ?? $name}}" name="{{$name ?? $id}}" {{isset($selected_group) ? "multiple" : ""}} @if(isset($required)) required @endif>
             @if(!isset($selected_group)) <option value="">Nenhum</option> @endif
             @foreach($values as $value)
                 @php

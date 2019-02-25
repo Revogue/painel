@@ -32,6 +32,7 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('admin::components.form.input.select', 'select');
 
         Blade::component('admin::components.panel', 'panel');
+        Blade::component('admin::components.form.ajax.ajaxAction', 'ajaxAction');
 
     }
 }

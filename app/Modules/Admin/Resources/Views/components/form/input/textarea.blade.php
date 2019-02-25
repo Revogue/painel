@@ -5,6 +5,7 @@
                   name="{{$name ?? $id}}"
                   placeholder="{{$placeholder ?? ''}}"
                   cols="{{$cols ?? 7}}"
+                  @if(isset($required)) required @endif
         >{{$value ?? ''}}</textarea>
         <label for="comment" class="field-icon">
             <i class="{{$icon ?? ''}}"></i>

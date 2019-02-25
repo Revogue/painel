@@ -7,6 +7,7 @@
                data-type="date"
                class="gui-input"
                placeholder="{{$placeholder ?? ''}}"
+               @if(isset($required)) required @endif
         >
         <label class="field-icon">
             <i class="{{$icon ?? ''}}"></i>

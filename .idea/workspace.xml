@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f7c5567-2aee-4c13-b524-2ced1f31823e" name="Default Changelist" comment="Adicionado componentes HTML e modulo de gerenciamento de permissão.">
+    <list default="true" id="7f7c5567-2aee-4c13-b524-2ced1f31823e" name="Default Changelist" comment="Fix menu collapse">
+      <change afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/ajax/ajaxAction.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Config/permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupParentResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupPermissionResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupPrefixResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupSuffixResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupUserResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/PermissionResourceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Services/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Services/PowerfullPermsPermissionImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/addParent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/checkbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/checkbox.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/select.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/textarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/textarea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Providers/ModuleServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Providers/ModuleServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Permission/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Permission/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/demo/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/demo/demo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,6 +53,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -28,103 +66,136 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revog_minecraft@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revog_minecraft@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revog_minecraft@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="revog_minecraft: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revog_minecraft@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="revog_minecraft: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="mc_perm_grouppermissions: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revog_minecraft@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="revog_minecraft: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="mc_perm_playergroups: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Services/PowerfullPermsPermissionImpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Item.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="280">
+              <caret line="576" column="28" lean-forward="true" selection-start-line="576" selection-start-column="28" selection-end-line="576" selection-end-column="28" />
               <folding>
-                <element signature="e#47#101#0#PHP" expanded="true" />
+                <element signature="e#144#158#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="-799">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-              <folding>
-                <element signature="e#47#84#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupUserResourceController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Services/Permission.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="103" column="9" selection-start-line="100" selection-start-column="8" selection-end-line="103" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#7#35#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/web.php">
+        <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Traits/HasAttributes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Utils.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Link.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            <state relative-caret-position="390">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#59#129#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,15 +206,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>welcome</find>
-      <find>User Menu</find>
-      <find>Dashboard</find>
-      <find>;</find>
       <find>&lt;script src=&quot;(.*)&quot;&gt;&lt;/script&gt;</find>
       <find>File Uploaders</find>
       <find>active</find>
@@ -160,17 +228,37 @@
       <find>menu</find>
       <find>menu-open</find>
       <find>attributesAsHtml</find>
+      <find>permission</find>
+      <find>setDefaultConnection</find>
+      <find>$this-&gt;getConnection()</find>
+      <find>form</find>
+      <find>required=&quot;{{$required ?? 'false'}}&quot;</find>
+      <find>201</find>
+      <find>400</find>
+      <find>addPrefix</find>
+      <find>_method</find>
+      <find>&gt;</find>
+      <find>panel-footer</find>
+      <find>animation-switcher</find>
+      <find>$expires</find>
+      <find>addUserPermission</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;script src=&quot;{{ asset('$1') }}&quot;&gt;&lt;/script&gt;</replace>
       <replace>&quot;/assets</replace>
       <replace>src=&quot;/vendor</replace>
+      <replace>pa</replace>
+      <replace>@if(isset($required)) required @endif</replace>
+      <replace>Response::HTTP_CREATED</replace>
+      <replace>Response::HTTP_BAD_REQUEST</replace>
+      <replace>add-group</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Lucas\Desktop\panel\</dir>
       <dir>C:\Users\Lucas\Desktop\panel\app\Modules</dir>
       <dir>C:\Users\Lucas\Desktop\panel</dir>
       <dir>C:\Users\Lucas\IdeaProjects\painel</dir>
+      <dir>C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Resources\Views\manager</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -185,57 +273,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Http/Middleware/MenuMiddleware.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterConfigController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterListController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterNewController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Http/Controllers/RegisterOverviewController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/content.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Resources/Views/overview/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Resources/Views/config/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Providers/MenuServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Resources/Views/list/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Register/Providers/ModuleServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Providers/ModuleServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/add_user.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/add/user.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/permission.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/user.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/header.blade.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/sidebar_left.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/admin-tools/admin-forms/css/admin-forms.css" />
         <option value="$PROJECT_DIR$/public/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/textarea.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/checkbox.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/select.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" />
         <option value="$PROJECT_DIR$/vendor/konekt/menu/src/Item.php" />
         <option value="$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Config/permission.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bc3946dd-6cc0-4cdb-8ce7-502cebf7641c/console.sql" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/topbar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/partials/topbar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php" />
+        <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/PermissionResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Providers/ModuleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/demo/demo.js" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/textarea.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/select.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/checkbox.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/PermissionResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupPrefixResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupSuffixResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/ajax/ajaxAction.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/addParent.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupParentResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupPermissionResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Services/Permission.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupUserResourceController.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Http/Services/PowerfullPermsPermissionImpl.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Permission/Routes/api.php" />
       </list>
     </option>
   </component>
@@ -355,6 +443,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -379,14 +468,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
@@ -421,6 +502,16 @@
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -432,6 +523,30 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
               <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -440,6 +555,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="Permission" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
@@ -457,6 +580,25 @@
               <item name="Permission" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
@@ -537,35 +679,6 @@
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -591,42 +704,25 @@
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-              <item name="default_skin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-              <item name="default_skin" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="skin" type="462c0819:PsiDirectoryNode" />
-              <item name="default_skin" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="theme.css" type="620a8d5e:NestingTreeNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
@@ -637,67 +733,130 @@
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="konekt" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="konekt" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="konekt" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="painel" type="b2602c69:ProjectViewProjectNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="konekt" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="painel" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="http-foundation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="PDO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="standard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="painel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="bc3946dd-6cc0-4cdb-8ce7-502cebf7641c" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Constants" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550134540960" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server.php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Http\Controllers\Resource" />
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Http\Controllers" />
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Resources\Views\partials" />
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components" />
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components\form\input" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager\permission" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager\user" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager\add" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Http\Controllers\Resource" />
+      <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Resources\Views\manager\group" />
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Http\Controllers" />
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Admin\Resources\Views\components\form\input" />
       <recent name="C:\Users\Lucas\IdeaProjects\painel\app\Modules\Permission\Resources\Views\manager" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Http\Controllers" />
-      <recent name="C:\Users\Lucas\Desktop\panel\app\Modules\Permission\Resources\Views\manager" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -748,7 +907,9 @@
       <workItem from="1550335653219" duration="294000" />
       <workItem from="1550335991757" duration="536000" />
       <workItem from="1550336573090" duration="26967000" />
-      <workItem from="1550435719251" duration="7506000" />
+      <workItem from="1550435719251" duration="11754000" />
+      <workItem from="1550479958921" duration="34708000" />
+      <workItem from="1550831163725" duration="24482000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizando arquivos do projeto">
       <created>1547999900932</created>
@@ -827,11 +988,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550439221195</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fix menu collapse">
+      <created>1550443322073</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550443322073</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87522000" />
+    <option name="totallyTimeSpent" value="150960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,7 +1014,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -855,7 +1023,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -866,6 +1034,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3715221" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.39934534" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -874,7 +1043,7 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
       <window_info anchor="right" id="Preview" order="9" weight="0.32995737" />
     </layout>
     <layout-to-restore>
@@ -923,7 +1092,8 @@
     <MESSAGE value="Adicionado modulos de permisssão, registro, punimento e shop" />
     <MESSAGE value="Adicionado modulos de registro" />
     <MESSAGE value="Adicionado componentes HTML e modulo de gerenciamento de permissão." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado componentes HTML e modulo de gerenciamento de permissão." />
+    <MESSAGE value="Fix menu collapse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix menu collapse" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -935,375 +1105,437 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/content.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/sidebar_right.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar_dropdown.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Resources/Views/new/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Resources/Views/overview/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/admin-tools/admin-forms/js/jquery-ui-datepicker.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/admin-tools/admin-forms/css/admin-forms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Resources/Views/list/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" selection-end-line="226" />
+        <state relative-caret-position="373">
+          <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="e#59#129#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/topbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/stubs/PDO/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9622">
-          <caret line="566" column="33" selection-start-line="566" selection-start-column="33" selection-end-line="566" selection-end-column="33" />
+        <state relative-caret-position="177">
+          <caret line="1193" column="20" selection-start-line="1193" selection-start-column="20" selection-end-line="1193" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/sidebar_left.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="382">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/plugins/magnific/magnific-popup.css">
+    <entry file="file://$PROJECT_DIR$/vendor/caffeinated/modules/src/Support/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+        <state relative-caret-position="111">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Register/Resources/Views/config/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="143" column="22" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
+        <state relative-caret-position="118">
+          <caret line="123" column="23" selection-start-line="123" selection-start-column="23" selection-end-line="123" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6052">
+          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/ModuleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1293">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/skin/default_skin/css/theme.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret column="259234" selection-start-column="259234" selection-end-column="259234" />
-          <folding>
-            <element signature="e#91035#91286#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/skin/base/panels.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5447">
-          <caret line="327" column="3" selection-start-line="327" selection-start-column="3" selection-end-line="327" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="537" column="16" selection-start-line="537" selection-start-column="16" selection-end-line="537" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/skin/default_skin/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16110" column="1" selection-start-line="16110" selection-start-column="1" selection-end-line="16110" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerPermissionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="9299">
+          <caret line="547" column="16" selection-start-line="547" selection-start-column="12" selection-end-line="547" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/textarea.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/checkbox.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="102">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/select.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="80" selection-start-line="4" selection-start-column="80" selection-end-line="4" selection-end-column="80" />
+        <state relative-caret-position="51">
+          <caret line="3" column="142" selection-start-line="3" selection-start-column="142" selection-end-line="3" selection-end-column="142" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/number.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="210" column="88" selection-start-line="210" selection-start-column="88" selection-end-line="210" selection-end-column="88" />
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/checkbox.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="1355" column="4" selection-start-line="1355" selection-start-column="4" selection-end-line="1355" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="118" column="42" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupSuffixResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
           <folding>
-            <element signature="e#4214#5300#0#HTML" />
-            <element signature="e#5429#6605#0#HTML" />
+            <element signature="e#68#120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/panel.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/text.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="71" selection-start-line="71" selection-end-line="73" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/php.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/laravel-plugin.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/composerJson.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1496">
-          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="e#2324#2328#0" expanded="true" />
-            <element signature="e#2339#2345#0" expanded="true" />
-            <element signature="e#2349#2355#0" expanded="true" />
-            <element signature="e#2355#2359#0" expanded="true" />
-            <element signature="e#2359#2363#0" expanded="true" />
-            <element signature="e#2370#2374#0" expanded="true" />
-            <element signature="e#2481#2487#0" expanded="true" />
-            <element signature="e#2707#2713#0" expanded="true" />
-            <element signature="e#2816#2820#0" expanded="true" />
-            <element signature="e#2831#2837#0" expanded="true" />
-            <element signature="e#2854#2860#0" expanded="true" />
-            <element signature="e#2860#2864#0" expanded="true" />
-            <element signature="e#2864#2868#0" expanded="true" />
-            <element signature="e#2875#2879#0" expanded="true" />
-            <element signature="e#2905#2911#0" expanded="true" />
-            <element signature="e#2948#2954#0" expanded="true" />
-            <element signature="e#45317#45321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Utils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Link.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Traits/HasAttributes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="289">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ComponentServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        <state relative-caret-position="407">
+          <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/ajax/ajaxAction.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/component/sidebar_right.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Resources/Views/components/form/input/date.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/addParent.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupPrefixResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/PermissionResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
           <folding>
-            <element signature="e#47#84#0#PHP" expanded="true" />
+            <element signature="e#68#120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Providers/MenuServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupParentResourceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+        <state relative-caret-position="362">
+          <caret line="36" column="61" lean-forward="true" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/konekt/menu/src/Item.php">
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/stubs/standard/_types.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
+        <state relative-caret-position="194">
+          <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Providers/ModuleServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerGroupController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        <state relative-caret-position="391">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
-            <element signature="e#47#101#0#PHP" expanded="true" />
+            <element signature="e#59#129#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Admin/Config/SidebarRightMenuRenderer.php">
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="103" column="9" selection-start-line="100" selection-start-column="8" selection-end-line="103" selection-end-column="9" />
+        <state relative-caret-position="511">
+          <caret line="123" column="50" lean-forward="true" selection-start-line="114" selection-start-column="36" selection-end-line="123" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="61" lean-forward="true" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupPermissionResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/ManagerUserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#59#129#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/user/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/permission/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Resources/Views/manager/group/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Controllers/Resource/GroupUserResourceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Services/PowerfullPermsPermissionImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="576" column="28" lean-forward="true" selection-start-line="576" selection-start-column="28" selection-end-line="576" selection-end-column="28" />
+          <folding>
+            <element signature="e#144#158#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Http/Services/Permission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Permission/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#7#35#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>panel</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

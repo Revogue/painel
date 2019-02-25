@@ -5,7 +5,7 @@
 <head>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <title>AbsoluteAdmin - A Responsive Bootstrap 3 Admin Dashboard Template</title>
+    <title>Revo Panel - @yield('title')</title>
     <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
     <meta name="description" content="AbsoluteAdmin - A Responsive HTML5 Admin UI Framework">
     <meta name="author" content="AbsoluteAdmin">
@@ -65,7 +65,7 @@
         <!-- End: Content -->
 
         <!-- Begin: Page Footer -->
-        @include('admin::component.footer')
+        {{--@include('admin::component.footer')--}}
         <!-- End: Page Footer -->
 
     </section>
@@ -104,14 +104,19 @@
 <!-- Page Plugins -->
 <script src="{{ asset('vendor/plugins/magnific/jquery.magnific-popup.js') }}"></script>
 
+<!-- PNotify -->
+<script src="{{ asset('vendor/plugins/pnotify/pnotify.js') }}"></script>
+
+
 <!-- Theme Javascript -->
 <script src="{{ asset('assets/js/utility/utility.js') }}"></script>
-<script src="{{ asset('assets/js/demo/demo.js') }}"></script>
+
 <script src="{{ asset('assets/js/main.js') }}"></script>
 
 <!-- Widget Javascript -->
 <script src="{{ asset('assets/js/demo/widgets.js') }}"></script>
 
+<script src="{{ asset('assets/js/custom.js') }}"></script>
 <!-- BEGIN: PAGE SCRIPTS -->
 @stack('scripts')
 
@@ -121,13 +126,8 @@
 
         "use strict";
 
-        // Init Demo JS
-        Demo.init();
-
-
         // Init Theme Core
         Core.init();
-
 
         // Selects
         $('select').multiselect();
@@ -474,6 +474,25 @@
                 },
                 midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
             });
+        });
+    }
+
+    function sendNofification(title, text, style){
+        new PNotify({
+            title: title,
+            text: text,
+            opacity: 1,
+            addclass: 'stack_top_right',
+            type: style,
+            stack: {
+                "dir1": "down",
+                "dir2": "left",
+                "push": "top",
+                "spacing1": 10,
+                "spacing2": 10
+            },
+            width: '350px',
+            delay: 1400
         });
     }
 </script>

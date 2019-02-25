@@ -1,13 +1,14 @@
 @extends('admin::index')
 
-
+@section('title', 'Gerenciar Grupos')
+@section('title', 'Gerenciar Grupos')
 
 @section('content')
 
     <!-- begin: .tray-left -->
     <aside class="tray tray-left tray290" data-tray-height="match">
         <div class="text-center">
-            <button id="animation-switcher" class="btn btn-system w250">Adicionar Grupo</button>
+            <button id="add-group" class="btn btn-system w250">Adicionar Grupo</button>
         </div>
         <div id="nav-spy">
             <ul class="nav tray-nav tray-nav-border" data-smoothscroll="-145" data-spy="affix" data-offset-top="105">
@@ -21,83 +22,113 @@
     </aside>
     <!-- end: .tray-left -->
 
-
     <!-- begin: .tray-center -->
     <div class="tray tray-center">
-        <div class="">
-            <form class="">
+        @if($group)
+            <div class="">
 
-                <div class="panel">
-                    <div class="panel-heading">
-                        <span class="panel-title">
-                            <span class="fa fa-table"></span>Informações
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <div class="section row">
+                @panel([
+                'title' => 'Informações'
+                ])
+                @slot('menu')
+                    <form class="ajax dialog" method="post"
+                          action="http://painel.localhost/api/permission/group/{{$group['id']}}"
+                          data-notification-success-tile="Apagado"
+                          data-notification-success="Grupo apagado!"
+                          data-notification-error-tile="Erro ao apagar grupo"
+                          data-reload="true"
+                    >
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-xs btn-danger">
+                            <span class="glyphicon glyphicon-trash fs11 mr5"></span>Apagar
+                        </button>
+                    </form>
+                @endslot
+                <div class="section row">
+                    <form class="ajax dialog" method="post" id="update-group"
+                          action="http://painel.localhost/api/permission/group/{{$group['id']}}"
+                          data-notification-success-tile="Atualizado"
+                          data-notification-success="Grupo atualizado!"
+                          data-notification-error-tile="Erro ao atualizar informações grupo"
+                          data-reload="true"
+                          data-method="PUT">
+                        @input_text([
+                        'size' => 6,
+                        'id' => 'group-name',
+                        'name' => 'name',
+                        'text' => 'Nome',
+                        'placeholder' => 'Nome do grupo',
+                        'value' => $group['name']
+                        ])
+                        @endinput_text
 
-                            @input_text([
-                            'size' => 10,
-                            'id' => 'group-name',
-                            'name' => 'group-name',
-                            'text' => 'Nome',
-                            'placeholder' => 'Nome do grupo',
-                            'value' => $group['name']
-                            ])
-                            @endinput_text
+                        @input_text([
+                        'size' => 2,
+                        'id' => 'group-rank',
+                        'name' => 'rank',
+                        'text' => 'Rank',
+                        'placeholder' => 'Rank do grupo',
+                        'value' => $group['rank']
+                        ])
+                        @endinput_text
 
-                            @input_text([
-                            'size' => 2,
-                            'id' => 'group-rank',
-                            'name' => 'group-rank',
-                            'text' => 'Rank',
-                            'placeholder' => 'Rank do grupo',
-                            'value' => $group['rank']
-                            ])
-                            @endinput_text
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-
-                                    @select([
-                                    'size' => 6,
-                                    'id' => 'group-rank',
-                                    'name' => 'group-rank',
-                                    'text' => 'Lider do Grupo',
-                                    'values' => $groups,
-                                    'text_property' => 'name',
-                                    'selected_id' => $group['leader']
-                                    ])
-                                    @endselect
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="row">
-
-                                    @select([
-                                    'size' => 6,
-                                    'id' => 'group_parent',
-                                    'name' => 'group_parent',
-                                    'text' => 'Pais do grupo',
-                                    'values' => $groups,
-                                    'text_property' => 'name',
-                                    'selected_group' => $group['parent']
-                                    ])
-                                    @endselect
-
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
+                        @input_text([
+                        'size' => 4,
+                        'id' => 'group-ladder',
+                        'name' => 'ladder',
+                        'text' => 'Escada do Grupo',
+                        'value' => $group['ladder']
+                        ])
+                        @endinput_text
+                    </form>
                 </div>
+                @slot('footer')
+                    <div class="text-right">
+                        <button type="submit" form="update-group" class="btn btn-success">Salvar</button>
+                    </div>
+                @endslot
+                @endpanel
+
+
+                @panel([
+                'title' => 'Pais do Grupo'
+                ])
+                @slot('menu')
+                    <button id="add-parent" type="button" class="btn btn-xs btn-success">
+                        <span class="fa fa-plus fs11 mr5"></span>Adicionar
+                    </button>
+                @endslot
+                <table class="table" id="table_parent" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Grupo</th>
+                        <th>Ação</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    @if($group)
+                        @foreach($group['parent'] as $parent)
+                            <tr>
+                                <td>{{$parent['group']['name']}}</td>
+                                <td class="text-right">
+                                    @ajaxAction([
+                                    'url' => 'api/permission/group/parent/'. $parent['id'],
+                                    'method' => 'DELETE',
+                                    'onSuccessTitle' => 'Removido',
+                                    'onSuccess' => 'Parent foi removido',
+                                    'onError' => 'Erro ao remover Parent',
+                                    'type' => 'danger',
+                                    'icon' => 'fa fa-times'
+                                    ])
+                                    @endajaxAction
+                                </td>
+                            </tr>
+                        @endforeach
+                    @endif
+                    </tbody>
+                </table>
+                @endpanel
 
                 @panel([
                 'title' => 'Prefixos'
@@ -105,25 +136,27 @@
                 <table class="table" id="table_prefix" cellspacing="0" width="100%">
                     <thead>
                     <tr>
-                        <th>Rank</th>
                         <th>Prefixo</th>
+                        <th>Server</th>
                         <th>Ação</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($group['prefix'] as $prefix)
-                        <tr>
-                            <td>{{$prefix['value']}}</td>
-                            <td>{{$prefix['server']}}</td>
-                            <td class="text-right">
-                                <div class="btn-group">
-                                    <button type="button" permission-id="{{$prefix['id']}}" action="remove-permission" class="btn btn-danger btn-xs">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    @endforeach
+                    @if($group)
+                        @foreach($group['prefix'] as $prefix)
+                            <tr>
+                                <td>{{$prefix['value']}}</td>
+                                <td>{{$prefix['server']}}</td>
+                                <td class="text-right">
+                                    <div class="btn-group">
+                                        <button type="button" id-prefix="{{$prefix['id']}}" action="remove-permission" class="btn btn-danger btn-xs">
+                                            <i class="fa fa-times"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        @endforeach
+                    @endif
                     </tbody>
                 </table>
                 @endpanel
@@ -140,33 +173,37 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($group['suffix'] as $suffix)
-                        <tr>
-                            <td>{{$suffix['value']}}</td>
-                            <td>{{$suffix['server']}}</td>
-                            <td class="text-right">
-                                <div class="btn-group">
-                                    <button type="button" permission-id="{{$suffix['id']}}"
-                                            action="remove-permission"
-                                            class="btn btn-danger btn-xs">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    @endforeach
+                    @if($group)
+                        @foreach($group['suffix'] as $suffix)
+                            <tr>
+                                <td>{{$suffix['value']}}</td>
+                                <td>{{$suffix['server']}}</td>
+                                <td class="text-right">
+                                    <div class="btn-group">
+                                        <button type="button" id-suffix="{{$suffix['id']}}"
+                                                action="remove-permission"
+                                                class="btn btn-danger btn-xs">
+                                            <i class="fa fa-times"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        @endforeach
+                    @endif
                     </tbody>
                 </table>
                 @endpanel
 
 
-            </form>
-
-        </div>
+            </div>
+        @endif
     </div>
 
 
     @include('permission::manager.group.add')
+    @if($group)
+        @include('permission::manager.group.addParent')
+    @endif
 @endsection
 
 
@@ -208,7 +245,10 @@
     <script type="text/javascript">
         jQuery(document).ready(function () {
 
-            setupModal('#animation-switcher', '#modal-add-permission', 'mfp-with-fade');
+            setupModal('#add-group', '#modal-add-permission', 'mfp-with-fade');
+            setupModal('#add-parent', '#modal-add-parent', 'mfp-with-fade');
+
+
         });
 
     </script>

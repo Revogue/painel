@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['prefix' => 'permission'], function () {
-        Route::get('/', 'ManagerController@index')
+        Route::get('/', 'ManagerPermissionController@index')
             ->name('permission.edit');
 
         Route::get('manager/permission/{serverName?}/{groupName?}', 'ManagerPermissionController@index')

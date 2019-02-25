@@ -6,6 +6,7 @@
                class="gui-input"
                placeholder="{{$placeholder ?? ''}}"
                value="{{$value ?? ''}}"
+               @if(isset($required)) required @endif
         >
         <label class="field-icon">
             <i class="{{$icon ?? ''}}"></i>

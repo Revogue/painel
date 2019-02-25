@@ -2,6 +2,7 @@
 
 namespace App\Modules\Permission\Http\Controllers;
 
+use App\Modules\Permission\Http\Services\PowerfullPermsPermissionImpl;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
@@ -12,71 +13,49 @@ class ManagerUserController extends Controller
     //
     function index($serverName = null, $groupName = null){
 
+        $perm = new PowerfullPermsPermissionImpl();
 
         $servers = [
             [
                 'name' => 'Global',
-                'id' => ''
+                'id' => 'all'
             ],
             [
                 'name' => 'Bungeecord',
+                'id' => 'bungeecord',
             ],
             [
                 'name' => 'Hub 1',
+                'id' => 'hub1',
             ],
             [
-                'name' => 'Hub 2',
+                'name' => 'SkyBlock 1',
+                'id' => 'skyblock1',
             ],
             [
-                'name' => 'Criativo',
+                'name' => 'Criativo 1',
+                'id' => 'criativo1',
             ],
             [
                 'name' => 'Survival',
+                'id' => 'survival',
             ],
         ];
 
-        $groups= [
-            [
-                'name' => 'Jogador',
-                'id' => ''
-            ],
-            [
-                'name' => 'Moderador',
-                'id' => ''
-            ],
-            [
-                'name' => 'Administrador',
-                'id' => ''
-            ],
-            [
-                'name' => 'Ajudante',
-                'id' => ''
-            ],
-            [
-                'name' => 'Fundador',
-                'id' => ''
-            ],
-            [
-                'name' => 'VIP',
-                'id' => ''
-            ],
-        ];
+        $groups = $perm->getGroups();
 
         if(is_null($serverName)){
-            $serverName = reset($servers)['name'];
+            $serverName = reset($servers)['id'];
         }
+
         if(is_null($groupName)){
             $groupName = reset($groups)['name'];
         }
 
-        $users = [];
-        for($i = 0; $i < 10; $i++)
-        {
-            $users[$i]['id'] = $i+1;
-            $users[$i]['user'] = 'user_' . ($i + 1);
-            $users[$i]['world'] = "world";
-            $users[$i]['expire'] = "21/11/2019 09:14:11";
-        }
+        $group = $perm->getGroupByName($groupName);
+
+        $users = $perm->getUsers($group['id'], $serverName);
+
 
         return view("permission::manager.user.index", compact('serverName', 'groupName', 'servers', 'groups', 'users'));
     }

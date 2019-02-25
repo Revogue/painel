@@ -1,11 +1,16 @@
 <div class="panel">
-    @if(isset($title))
+
     <div class="panel-heading">
-        <span class="panel-title">
-            {{$title ?? ''}}
-        </span>
+        @if(isset($title))
+        <span class="panel-title">{{$title ?? ''}}</span>
+        @endif
+        @if(isset($menu))
+            <div class="widget-menu pull-right mr10">
+                {{$menu}}
+            </div>
+        @endif
     </div>
-    @endif
+
     <div class="panel-body">
         {{ $slot }}
     </div>

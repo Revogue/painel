@@ -37,9 +37,12 @@ class MenuServiceProvider extends ServiceProvider
             ->activateOnUrls('admin/permission/*');
 
         $sidebar->plugins->permission->addSubItem("permission_overview", "Visão geral", 'admin/permission');
-        $sidebar->plugins->permission->addSubItem("permission_manager_permission", "Gerenciar Permissões", 'admin/permission/manager/permission');
-        $sidebar->plugins->permission->addSubItem("permission_manager_user", "Gerenciar Usuários", 'admin/permission/manager/user');
-        $sidebar->plugins->permission->addSubItem("permission_manager_group", "Gerenciar Grupos", 'admin/permission/manager/group');
+        $sidebar->plugins->permission->addSubItem("permission_manager_permission", "Gerenciar Permissões", 'admin/permission/manager/permission')
+            ->activateOnUrls('admin/permission/manager/permission/*');
+        $sidebar->plugins->permission->addSubItem("permission_manager_user", "Gerenciar Usuários", 'admin/permission/manager/user')
+            ->activateOnUrls('admin/permission/manager/user/*');
+        $sidebar->plugins->permission->addSubItem("permission_manager_group", "Gerenciar Grupos", 'admin/permission/manager/group')
+            ->activateOnUrls('admin/permission/manager/group/*');
         $sidebar->plugins->permission->addSubItem("permission_config", "Configuração", 'admin/permission/config');
     }
 }

@@ -3,7 +3,7 @@
     <div class="topbar-left">
         <ol class="breadcrumb">
             <li class="crumb-active">
-                <a href="dashboard.html">Dashboard</a>
+                <a href="dashboard.html">@yield('title')</a>
             </li>
             <li class="crumb-icon">
                 <a href="dashboard.html">
